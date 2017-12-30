@@ -1,0 +1,18 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug the script",
+			"type": "node",
+			"request": "launch",
+			"protocol": "inspector",
+
+			// Breakpoints don't seem to work: https://github.com/TypeStrong/ts-node/issues/46
+			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
+			"runtimeArgs": [
+				"--ignore=false",
+				"${workspaceRoot}/src/service.ts"
+			]
+		}
+	]
+}
