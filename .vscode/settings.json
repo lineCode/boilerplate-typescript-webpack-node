@@ -10,6 +10,7 @@
 		".editorconfig": true,
 		".gitignore": true,
 		".gitattributes": true,
+		".npmrc": true,
 		"lib": true,
 		"node_modules": true,
 		"package-lock.json": true
@@ -21,6 +22,7 @@
 		".editorconfig": true,
 		".gitignore": true,
 		".gitattributes": true,
+		".npmrc": true,
 		"lib": true,
 		"node_modules": true,
 		"package-lock.json": true
