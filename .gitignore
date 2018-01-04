@@ -20,7 +20,7 @@
 !/.travis.yml
 !/.vscode
 !/src
-!/jasmine.helper.js
+!/jasmine.typescript.js
 !/tsconfig.json
 !/package.json
 !/wallaby.js

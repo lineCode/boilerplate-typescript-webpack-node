@@ -15,7 +15,7 @@
     "build": "webpack",
     "start": "node lib/compiled.js",
     "dev": "ts-node --ignore=false src/service.ts",
-    "test": "jasmine --helper=jasmine.helper.js src/**/*.spec.ts"
+    "test": "jasmine --helper=jasmine.typescript.js src/**/*.spec.ts"
   },
   "devDependencies": {
     "@types/jasmine": "2.8.3",
