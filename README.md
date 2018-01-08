@@ -1,5 +1,7 @@
 # Boilerplate: Node Script (webpack)
 
+[![Build Status](https://travis-ci.org/wildpeaks/boilerplate-typescript-webpack-node.svg?branch=master)](https://travis-ci.org/wildpeaks/boilerplate-typescript-webpack-node)
+
 Boilerplate for Node scripts that should be bundled to JS for production (e.g. Ubuntu services).
 
 
