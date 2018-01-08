@@ -2,7 +2,7 @@
   "private": true,
   "name": "@wildpeaks/boilerplate-typescript-webpack-node",
   "version": "0.0.1",
-  "description": "Bundled server-side script (e.g. Ubuntu service)",
+  "description": "Typescript Node Script for production",
   "author": "Cecile Muller",
   "license": "MIT",
   "eslintConfig": {
@@ -13,22 +13,21 @@
   ],
   "scripts": {
     "build": "webpack",
-    "start": "node lib/compiled.js",
-    "dev": "ts-node --ignore=false src/service.ts",
+    "start": "node lib/script.min.js",
     "test": "jasmine --helper=jasmine.typescript.js src/**/*.spec.ts"
   },
   "devDependencies": {
     "@types/jasmine": "2.8.3",
-    "@types/node": "8.5.2",
+    "@types/node": "9.3.0",
     "@wildpeaks/eslint-config-typescript": "4.3.0",
     "awesome-typescript-loader": "3.4.1",
     "clean-webpack-plugin": "0.1.17",
-    "eslint": "4.14.0",
+    "eslint": "4.15.0",
     "jasmine": "2.8.0",
     "source-map-loader": "0.2.3",
     "ts-node": "4.1.0",
     "typescript": "2.6.2",
-    "uglifyjs-webpack-plugin": "1.1.5",
+    "uglifyjs-webpack-plugin": "1.1.6",
     "webpack": "3.10.0"
   }
 }
