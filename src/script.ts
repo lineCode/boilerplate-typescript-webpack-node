@@ -1,4 +1,4 @@
 /* eslint-env node */
 import {mymodule} from 'mymodule';
 
-console.log('Service says', mymodule(123));
+console.log('Script says', mymodule(123));
