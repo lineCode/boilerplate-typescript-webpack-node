@@ -2,17 +2,27 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Debug the script",
+			"name": "Node Inspector (TS)",
 			"type": "node",
 			"request": "launch",
+			"args": ["${workspaceRoot}/src/script.ts"],
+			"runtimeArgs": ["-r", "ts-node/register"],
+			"cwd": "${workspaceRoot}",
 			"protocol": "inspector",
-
-			// Breakpoints don't seem to work: https://github.com/TypeStrong/ts-node/issues/46
-			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
-			"runtimeArgs": [
-				"--ignore=false",
-				"${workspaceRoot}/src/service.ts"
-			]
+			"internalConsoleOptions": "openOnSessionStart",
+			"env": {
+				"TS_NODE_IGNORE": "false"
+			}
+		},
+		{
+			"name": "Node Inspector (JS)",
+			"type": "node",
+			"request": "launch",
+			"args": ["${workspaceRoot}/lib/script.min.js"],
+			"cwd": "${workspaceRoot}",
+			"protocol": "inspector",
+			"internalConsoleOptions": "openOnSessionStart",
+			"preLaunchTask": "Webpack Build"
 		}
 	]
 }
