@@ -24,7 +24,7 @@
 !/tsconfig.json
 !/package.json
 !/wallaby.js
-!/webpack.config.js
+!/webpack.config.ts
 
 #-----------------------------------------------------------------------------#
 # But make sure to ignore those regardless:

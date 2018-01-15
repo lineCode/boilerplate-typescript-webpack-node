@@ -1,13 +1,11 @@
 /* eslint-env node */
-'use strict';
-const {join} = require('path');
-const {DefinePlugin, LoaderOptionsPlugin} = require('webpack');
-const {CheckerPlugin} = require('awesome-typescript-loader');
+import {join} from 'path';
+import {DefinePlugin, LoaderOptionsPlugin} from 'webpack';
+import {CheckerPlugin} from 'awesome-typescript-loader';
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-
-module.exports = {
+const config = {
 	target: 'node',
 	devtool: 'source-map',
 	entry: './src/script.ts',
@@ -68,3 +66,5 @@ module.exports = {
 		hints: false
 	}
 };
+
+export default config;
