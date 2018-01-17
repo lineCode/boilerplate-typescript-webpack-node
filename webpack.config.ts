@@ -42,7 +42,7 @@ export default function(): Configuration {
 			use: 'source-map-loader'
 		},
 		{
-			test: /\.ts$/,
+			test: /\.(ts|js)$/,
 			use: [
 				{
 					loader: 'awesome-typescript-loader',
