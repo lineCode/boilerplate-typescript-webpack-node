@@ -27,8 +27,8 @@
     "jasmine": "2.9.0",
     "source-map-loader": "0.2.3",
     "ts-node": "4.1.0",
-    "typescript": "2.6.2",
-    "uglifyjs-webpack-plugin": "1.1.7",
+    "typescript": "2.7.1",
+    "uglifyjs-webpack-plugin": "1.1.8",
     "webpack": "3.10.0"
   }
 }
