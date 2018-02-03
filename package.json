@@ -20,7 +20,7 @@
     "@types/jasmine": "2.8.6",
     "@types/node": "9.4.0",
     "@types/webpack": "3.8.4",
-    "@wildpeaks/eslint-config-typescript": "4.3.0",
+    "@wildpeaks/eslint-config-typescript": "4.4.0",
     "awesome-typescript-loader": "3.4.1",
     "clean-webpack-plugin": "0.1.18",
     "eslint": "4.17.0",
