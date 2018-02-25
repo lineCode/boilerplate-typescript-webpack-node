@@ -12,7 +12,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "node lib/script.min.js",
     "test": "jasmine --helper=jasmine.typescript.js src/**/*.spec.ts"
   },
@@ -28,7 +28,6 @@
     "source-map-loader": "0.2.3",
     "ts-node": "5.0.0",
     "typescript": "2.7.2",
-    "uglifyjs-webpack-plugin": "1.2.2",
     "webpack": "4.0.0",
     "webpack-cli": "2.0.9"
   }
