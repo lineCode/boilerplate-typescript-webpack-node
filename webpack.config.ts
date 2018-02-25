@@ -1,23 +1,14 @@
 /* eslint-env node */
 import {join} from 'path';
-import {DefinePlugin, Configuration, Plugin, Rule} from 'webpack';
+import {Configuration, Plugin, Rule} from 'webpack';
 import {CheckerPlugin} from 'awesome-typescript-loader';
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
 
 export default function(): Configuration {
 	//region Plugins
 	const plugins: Plugin[] = [
 		new CheckerPlugin(),
-		new DefinePlugin({
-			'process.env.NODE_ENV': '"production"'
-		}),
-		// new LoaderOptionsPlugin({
-		// 	options: {
-		// 		context: __dirname
-		// 	}
-		// }),
-		new CleanWebpackPlugin(['lib'], { // is this already compatible webpack 4 ?
+		new CleanWebpackPlugin(['lib'], {
 			root: __dirname,
 			verbose: false
 		})
