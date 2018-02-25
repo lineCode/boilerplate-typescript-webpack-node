@@ -1,4 +1,4 @@
-# Boilerplate: Node Script (webpack)
+# Boilerplate: Node Script (webpack 4)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/boilerplate-typescript-webpack-node.svg)](https://greenkeeper.io/)
 
