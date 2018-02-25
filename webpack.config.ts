@@ -1,9 +1,8 @@
 /* eslint-env node */
 import {join} from 'path';
-import {DefinePlugin, LoaderOptionsPlugin, Configuration, Plugin, Rule} from 'webpack';
+import {DefinePlugin, Configuration, Plugin, Rule} from 'webpack';
 import {CheckerPlugin} from 'awesome-typescript-loader';
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 export default function(): Configuration {
@@ -13,16 +12,12 @@ export default function(): Configuration {
 		new DefinePlugin({
 			'process.env.NODE_ENV': '"production"'
 		}),
-		new LoaderOptionsPlugin({
-			minimize: true,
-			options: {
-				context: __dirname
-			}
-		}),
-		new UglifyJsPlugin({
-			sourceMap: true
-		}),
-		new CleanWebpackPlugin(['lib'], {
+		// new LoaderOptionsPlugin({
+		// 	options: {
+		// 		context: __dirname
+		// 	}
+		// }),
+		new CleanWebpackPlugin(['lib'], { // is this already compatible webpack 4 ?
 			root: __dirname,
 			verbose: false
 		})
