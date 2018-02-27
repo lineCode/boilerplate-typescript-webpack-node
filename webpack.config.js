@@ -1,7 +1,6 @@
 /* eslint-env node */
 const {join} = require('path');
 const {Configuration, Plugin, Rule} = require('webpack');
-const {CheckerPlugin} = require('awesome-typescript-loader');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
@@ -20,7 +19,6 @@ module.exports = {
 	},
 	//region Plugins
 	plugins: [
-		new CheckerPlugin(),
 		new CleanWebpackPlugin(['lib'], {
 			root: __dirname,
 			verbose: false
@@ -39,7 +37,8 @@ module.exports = {
 				test: /\.(ts|js)$/,
 				use: [
 					{
-						loader: 'awesome-typescript-loader',
+						// loader: 'awesome-typescript-loader',
+						loader: 'ts-loader',
 						options: {
 							transpileOnly: true
 						}
